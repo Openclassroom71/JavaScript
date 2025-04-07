@@ -40,8 +40,10 @@ pieceElement.appendChild(stockElement);
 
 const boutonTrier = document.querySelector(".btn-trier");
 boutonTrier.addEventListener("click", function(){
-    pieces.sort(function(a, b){
+    const piecesOrdonnees = Array.from(pieces);
+
+    piecesOrdonnees.sort(function(a, b){
         return a.prix - b.prix;
     });
-    console.log(pieces);
+    console.log(piecesOrdonnees);
 });
