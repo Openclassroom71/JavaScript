@@ -53,5 +53,13 @@ boutonFiltrer.addEventListener("click", function(){
     const piecesFiltrees = pieces.filter(function(piece){
         return piece.prix <= 35;
     });
+    console.log(piecesFiltrees);
+});
 
+const boutonFiltrerDescription = document .querySelector(".btn-filtrer-description");
+boutonFiltrerDescription.addEventListener("click", function(){
+    const piecesFiltrees = pieces.filter(function(piece){
+        return piece.description !== null;
+    });
+    console.log(piecesFiltrees);
 });
