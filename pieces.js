@@ -59,7 +59,7 @@ boutonFiltrer.addEventListener("click", function(){
 const boutonFiltrerDescription = document .querySelector(".btn-filtrer-description");
 boutonFiltrerDescription.addEventListener("click", function(){
     const piecesFiltrees = pieces.filter(function(piece){
-        return piece.description !== undefined;
+        return piece.description;
     });
     console.log(piecesFiltrees);
 });
